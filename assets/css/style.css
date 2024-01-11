@@ -1,0 +1,309 @@
+/*Projects*/
+.our-latest-projects {
+    display: flex;
+    column-gap: 24px;
+    justify-content: space-between;
+}
+
+.our-latest-projects .latest-projects {
+    position: relative;
+}
+
+.our-latest-projects .project-detail {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: none;
+}
+
+.our-latest-projects .project-detail .project-col {
+    height: 100%;
+    padding: 38px;
+
+}
+
+.our-latest-projects .our-projects:hover .project-detail,
+.our-latest-projects .our-projects:hover .project-img::before {
+    display: block;
+}
+
+.our-latest-projects .project-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 460px;
+}
+
+.our-latest-projects .project-img {
+    position: relative;
+}
+
+.our-latest-projects .project-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #020202;
+    opacity: 72%;
+    display: none;
+}
+
+.our-latest-projects .our-projects {
+    width: calc(25% - 24px);
+}
+
+.our-latest-projects .project-txts h6 {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: "Avenir Next", Sans-serif;
+    display: none;
+}
+
+.our-latest-projects .project-txts h3 {
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 700;
+    color: #fff;
+    margin: 3px 0 10px;
+    font-family: "Avenir Next", Sans-serif;
+}
+
+.our-latest-projects .project-txts p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+    font-family: "Avenir Next", Sans-serif;
+}
+
+.our-latest-projects .project-txts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.our-latest-projects .project-btn p {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    color: #fff;
+    background: #AD402E;
+    padding: 12px 18px;
+    border-radius: 8px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: "Avenir Next", Sans-serif;
+}
+
+.our-latest-projects .project-btn p:hover {
+    color: #AD402E;
+    background: #fff;
+}
+
+.our-latest-projects.slick-slider .slick-list .slick-track,
+.our-clients-sec.slick-slider .slick-list .slick-track {
+    display: flex;
+    gap: 20px;
+}
+
+.our-latest-projects .slick-prev.slick-arrow,
+.our-clients-sec .slick-prev.slick-arrow {
+    top: unset;
+    left: 0;
+    bottom: -65px;
+    width: 40px;
+    height: 40px;
+    font-size: 0px;
+    padding: 15px;
+    background: #ad402e;
+}
+
+.our-latest-projects .slick-next.slick-arrow,
+.our-clients-sec .slick-next.slick-arrow {
+    top: unset;
+    bottom: -65px;
+    width: 40px;
+    height: 40px;
+    font-size: 0px;
+    padding: 15px;
+    left: 55px;
+    right: unset;
+    background: #ad402e;
+}
+
+.our-latest-projects .slick-arrow:hover,
+.our-clients-sec .slick-arrow:hover,
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+    background-color: rgba(173, 64, 46, 0.8) !important;
+}
+
+.our-latest-projects .slick-prev.slick-arrow::before,
+.our-clients-sec .slick-prev.slick-arrow:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-image: url("https://himatparsana.com/wp-content/uploads/2024/01/dropdown-arrow.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.our-latest-projects .slick-next.slick-arrow::before,
+.our-clients-sec .slick-next.slick-arrow:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-image: url("https://himatparsana.com/wp-content/uploads/2024/01/dropdown-arrow.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.our-projects .project-txts .project-label {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 12px;
+    row-gap: 5px;
+}
+
+.our-projects .project-txts .project-label span {
+    background-color: rgba(249, 249, 249, 0.3);
+    padding: 2px 5px;
+    margin-right: 5px;
+    color: #ffffff;
+    font-size: 10px;
+    line-height: 16px;
+}
+
+/*Testimonial*/
+.our-clients-sec {
+    display: flex;
+    gap: 24px;
+}
+
+.our-clients-sec .slick-slide {
+    background: #fff;
+    box-shadow: 0px 6px 20px rgb(0 0 0 / 6%);
+    padding: 30px 30px 30px 20px;
+    margin: 20px 0px;
+}
+
+.our-clients-sec .client-box h6 {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: "Avenir Next", Sans-serif;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+}
+
+.our-clients-sec .client-box .client-detail p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+    font-family: "Avenir Next", Sans-serif;
+    padding: 20px 0;
+}
+
+.our-clients-sec .read-btn {
+    color: #AD402E;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    column-gap: 10px;
+    font-family: "Gibson", Sans-serif;
+}
+
+.our-clients-sec .slick-slide:hover .read-btn {
+    column-gap: 15px;
+}
+
+.our-clients-sec .client-box {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+
+/* .....................Media............. */
+@media(max-width: 1200px) {
+    .our-latest-projects .project-detail .project-col {
+        padding: 28px;
+    }
+
+    .our-latest-projects .project-img img {
+        height: 400px;
+    }
+
+}
+
+@media(max-width: 1024px) {
+
+    .our-latest-projects .slick-prev.slick-arrow,
+    .our-clients-sec .slick-prev.slick-arrow,
+    .our-latest-projects .slick-next.slick-arrow,
+    .our-clients-sec .slick-next.slick-arrow {
+        width: 30px;
+        height: 30px;
+    }
+
+    .our-latest-projects .project-txts h3 {
+        font-size: 24px;
+        line-height: 28px;
+        margin: 10px 0px 5px;
+    }
+
+    .our-latest-projects .project-img img {
+        height: 360px;
+    }
+
+    .our-clients-sec .client-box {
+        gap: 15px;
+    }
+
+    .our-clients-sec .slick-slide {
+        padding: 20px;
+    }
+
+    .our-clients-sec .client-box .client-detail p {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 10px 0px 18px;
+    }
+
+    .our-clients-sec .read-btn {
+        font-size: 14px;
+    }
+
+    .our-clients-sec .read-btn img {
+        width: 16px;
+        height: 14px;
+        object-fit: contain;
+    }
+}
